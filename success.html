@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Activated</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f1117;
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #1a1d27;
+      border: 1px solid #2a2d3a;
+      border-radius: 16px;
+      padding: 48px 40px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon { font-size: 48px; margin-bottom: 20px; }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #a0a3b1;
+      margin-bottom: 16px;
+    }
+    .notice {
+      background: #1e2235;
+      border: 1px solid #3a3d55;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 28px 0;
+      text-align: left;
+    }
+    .notice strong {
+      color: #f0c040;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .notice p {
+      margin: 0;
+      font-size: 15px;
+      color: #c0c3d1;
+    }
+    .btn {
+      display: inline-block;
+      background: #229ed9;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #1a8bbf; }
+    .small {
+      font-size: 13px;
+      color: #606370;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">✅</div>
+    <h1>Payment Successful!</h1>
+    <p>Thank you for subscribing. You should receive a message from our Telegram bot shortly with your channel invite link.</p>
+
+    <div class="notice">
+      <strong>⚠️ Is your Telegram account set to private?</strong>
+      <p>If your Telegram privacy settings prevent messages from unknown contacts, our bot won't be able to reach you automatically. Click the button below to activate your access manually — it only takes a second.</p>
+    </div>
+
+    <a class="btn" href="https://t.me/EdgeScoutAdminBot?start=activate" target="_blank">
+      Activate Access on Telegram
+    </a>
+
+    <p class="small">Only needed if your Telegram is set to private. Public accounts will receive the invite link automatically.</p>
+  </div>
+</body>
+</html>
